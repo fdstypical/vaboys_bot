@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "tsc && node dist/src/app.js",
+    "build": "tsc",
+    "start": "node dist/src/app.js",
+    "dev": "tsc && node dist/src/app.js",
     "lint": "eslint \"src/**/{*.js,*ts}\" --fix",
     "prettier": "prettier --write \"src/**/{*.js,*ts}\""
   },
